@@ -107,9 +107,13 @@ figure:hover+span {
 	height: auto;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	
 }
 .hover02 figure:hover img {
 	width: 350px;
+	transform: scale(1.5);
+	position: relative;
+    z-index: 1;
 }
 
 /* Zoom Out #1 */
@@ -334,4 +338,29 @@ figure:hover+span {
 		height: 200%;
 		opacity: 0;
 	}
+}
+
+
+
+
+
+/* Start Gallery CSS */
+.thumb {
+	margin-bottom: 15px;
+}
+.thumb:last-child {
+	margin-bottom: 0;
+}
+/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+.thumb
+figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease -in -out;
+	transition: .3s ease -in -out;
+}
+.thumb
+figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
